@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="commande.xsl"?>
+<commandes>
+  <commande no_client="1">
+    <ligne_commande no_ligne_commande="1">
+      <date_commande>2022-09-06</date_commande>
+      <designation>air force</designation>
+      <quantite_commande>2</quantite_commande>
+      <paye>Non</paye>
+    </ligne_commande>
+    <ligne_commande no_ligne_commande="5">
+      <date_commande>2022-09-13</date_commande>
+      <designation>savon </designation>
+      <quantite_commande>2</quantite_commande>
+      <paye>Non</paye>
+    </ligne_commande>
+    <ligne_commande no_ligne_commande="9">
+      <date_commande>2022-09-13</date_commande>
+      <designation>Magazine</designation>
+      <quantite_commande>2</quantite_commande>
+      <paye>Oui</paye>
+    </ligne_commande>
+    <ligne_commande no_ligne_commande="13">
+      <date_commande>2022-09-24</date_commande>
+      <designation>Catallogue</designation>
+      <quantite_commande>5</quantite_commande>
+      <paye>Oui</paye>
+    </ligne_commande>
+  </commande>
+  <commande no_client="2">
+    <ligne_commande no_ligne_commande="2">
+      <date_commande>2022-09-06</date_commande>
+      <designation>telephone</designation>
+      <quantite_commande>1</quantite_commande>
+      <paye>Non</paye>
+    </ligne_commande>
+    <ligne_commande no_ligne_commande="8">
+      <date_commande>2022-09-16</date_commande>
+      <designation>Drap</designation>
+      <quantite_commande>1</quantite_commande>
+      <paye>Oui</paye>
+    </ligne_commande>
+  </commande>
+  <commande no_client="5">
+    <ligne_commande no_ligne_commande="3">
+      <date_commande>2022-09-01</date_commande>
+      <designation>teste</designation>
+      <quantite_commande>1</quantite_commande>
+      <paye>Non</paye>
+    </ligne_commande>
+    <ligne_commande no_ligne_commande="4">
+      <date_commande>2022-09-01</date_commande>
+      <designation>boite a gant</designation>
+      <quantite_commande>1</quantite_commande>
+      <paye>Non</paye>
+    </ligne_commande>
+  </commande>
+  <commande no_client="3">
+    <ligne_commande no_ligne_commande="6">
+      <date_commande>2022-09-15</date_commande>
+      <designation>Vitrine</designation>
+      <quantite_commande>2</quantite_commande>
+      <paye>Oui</paye>
+    </ligne_commande>
+    <ligne_commande no_ligne_commande="7">
+      <date_commande>2022-09-27</date_commande>
+      <designation>mini robe</designation>
+      <quantite_commande>3</quantite_commande>
+      <paye>Oui</paye>
+    </ligne_commande>
+    <ligne_commande no_ligne_commande="10">
+      <date_commande>2022-09-22</date_commande>
+      <designation>Tablette z6</designation>
+      <quantite_commande>1</quantite_commande>
+      <paye>Non</paye>
+    </ligne_commande>
+  </commande>
+  <commande no_client="9">
+    <ligne_commande no_ligne_commande="11">
+      <date_commande>2022-09-14</date_commande>
+      <designation>Android Meizu Z2</designation>
+      <quantite_commande>1</quantite_commande>
+      <paye>Oui</paye>
+    </ligne_commande>
+  </commande>
+  <commande no_client="8">
+    <ligne_commande no_ligne_commande="12">
+      <date_commande>2022-09-21</date_commande>
+      <designation>Air Max</designation>
+      <quantite_commande>1</quantite_commande>
+      <paye>Oui</paye>
+    </ligne_commande>
+  </commande>
+</commandes>

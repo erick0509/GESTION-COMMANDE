@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="client.xsl"?>
+<personne>
+  <client id="1">
+    <nom>RANJIVASON</nom>
+    <prenom>Claude Eric</prenom>
+    <adresse>lot 240 p/lle 23/44</adresse>
+    <age>22</age>
+    <email>erinjiva501@gmail.com</email>
+  </client>
+  <client id="2">
+    <nom>Jimmy</nom>
+    <prenom>Claude Senior</prenom>
+    <adresse>lot 77 bis p/lle 23/44</adresse>
+    <age>21</age>
+    <email>jimm512@gmail.com</email>
+  </client>
+  <client id="3">
+    <nom>Jean</nom>
+    <prenom>Claude Van Damme</prenom>
+    <adresse>Tanambao V</adresse>
+    <age>23</age>
+    <email>jeanCl@gmail.com</email>
+  </client>
+  
+  <client id="6">
+    <nom>Jean Claude</nom>
+    <prenom>RAVELOSON</prenom>
+    <adresse>Ambohimanga</adresse>
+    <age>45</age>
+    <email>vandamme@gmail.com</email>
+  </client>
+  <client id="9">
+    <nom>RAVELOSON</nom>
+    <prenom>Jean Claude</prenom>
+    <adresse>77 bis p/lle 23/44 Androranga</adresse>
+    <age>45</age>
+    <email>jc@gmail.com</email>
+  </client>
+  <client id="10">
+    <nom>Jean</nom>
+    <prenom>Paul</prenom>
+    <adresse>Mani</adresse>
+    <age>25</age>
+    <email>jp@gmail.com</email>
+  </client>
+  <client id="4">
+    <nom>uzumaki </nom>
+    <prenom>boruto</prenom>
+    <adresse>konoha</adresse>
+    <age>12</age>
+    <email>borutoOtsotsoki@gmail.com</email>
+  </client>
+</personne>

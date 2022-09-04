@@ -1,0 +1,12 @@
+<!-- DTD created at Fri Aug 19 07:20:47 CEST 2022 with EditiX XML Editor (http://www.editix.com). Please insert an encoding attribute header for converting any DTD  -->
+
+<!ELEMENT  personne(client)>
+<!ELEMENT client(nom,prenom,adresse,age,email)>
+<!ELEMENT  nom(#PCDATA)>
+<!ELEMENT  prenom(#PCDATA)>
+<!ELEMENT  adresse(#PCDATA)>
+<!ELEMENT  age(#PCDATA)>
+<!ELEMENT  email(#PCDATA)>
+<!ATTLIST client id ID #REQUIRED)>
+<!ATTLIST tag  attribute CDATA #REQUIRED>
+

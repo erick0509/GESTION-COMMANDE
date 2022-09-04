@@ -1,0 +1,11 @@
+<!-- DTD created at Fri Aug 19 07:20:47 CEST 2022 with EditiX XML Editor (http://www.editix.com). Please insert an encoding attribute header for converting any DTD  -->
+<!ELEMENT commandes(commande)>
+<!ELEMENT commande(ligne_commande)>
+<!ELEMENT ligne_commande(date_commande,designation,quantite_commande,paye)>
+<!ELEMENT  date_commande(#PCDATA)>
+<!ELEMENT  designation(#PCDATA)>
+<!ELEMENT  quantite_commande(#PCDATA)>
+<!ELEMENT  paye(#PCDATA)>
+<!ATTLIST ligne_commande no_ligne_commande ID #REQUIRED>
+<!ATTLIST commande no_client ID #REQUIRED>
+<!ATTLIST tag  attribute CDATA #REQUIRED>

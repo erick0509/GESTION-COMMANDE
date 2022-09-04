@@ -1,0 +1,17 @@
+<?php
+    session_start();
+    $i=$_SESSION['id'];
+    $xml=simplexml_load_file('../VUES/client.xml');
+    $nom=$xml->xpath("//client[@id=$i]/nom");
+    $prenom=$xml->xpath("//client[@id=$i]/prenom");
+    $adresse=$xml->xpath("//client[@id=$i]/adresse");
+    $age=$xml->xpath("//client[@id=$i]/age");
+    $email=$xml->xpath("//client[@id=$i]/email");
+    dom_import_simplexml($nom[0])->nodeValue=$_POST['nom'];
+    dom_import_simplexml($prenom[0])->nodeValue=$_POST['prenom'];
+    dom_import_simplexml($adresse[0])->nodeValue=$_POST['adresse'];
+    dom_import_simplexml($age[0])->nodeValue=$_POST['age'];
+    dom_import_simplexml($email[0])->nodeValue=$_POST['email'];
+    $xml->saveXML('../VUES/client.xml');
+    header("location:../VUES/client.xml");
+?>
