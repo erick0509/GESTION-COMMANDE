@@ -1,0 +1,16 @@
+<?php
+    session_start();
+    $i=$_SESSION['no_ligne_commande'];
+    $xml=simplexml_load_file('../VUES/commande.xml');
+    $date_commande=$xml->xpath("//ligne_commande[@no_ligne_commande=$i]/date_commande");
+    $designation=$xml->xpath("//ligne_commande[@no_ligne_commande=$i]/designation");
+    $quantite_commande=$xml->xpath("//ligne_commande[@no_ligne_commande=$i]/quantite_commande");
+    $paye=$xml->xpath("//ligne_commande[@no_ligne_commande=$i]/paye");
+    dom_import_simplexml($date_commande[0])->nodeValue=$_POST['date_commande'];
+    dom_import_simplexml($designation[0])->nodeValue=$_POST['designation'];
+    dom_import_simplexml($quantite_commande[0])->nodeValue=$_POST['quantite_commande'];
+    dom_import_simplexml($paye[0])->nodeValue=$_POST['paye'];
+    $xml->saveXML('../VUES/commande.xml');
+    session_destroy();
+    header("location:../VUES/commande.xml");
+?>

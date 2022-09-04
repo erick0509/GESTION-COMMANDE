@@ -13,5 +13,6 @@
     dom_import_simplexml($age[0])->nodeValue=$_POST['age'];
     dom_import_simplexml($email[0])->nodeValue=$_POST['email'];
     $xml->saveXML('../VUES/client.xml');
+    session_destroy();
     header("location:../VUES/client.xml");
 ?>

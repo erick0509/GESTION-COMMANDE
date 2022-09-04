@@ -71,6 +71,7 @@
                                                 </thead>
                                                 <tbody>
                                             <?php
+                                                    session_start();
                                                     $parent=$lgcommande->item(0);
                                                     $grandparent=$parent->parentNode;
                                                     echo "<tr class='active'>";
@@ -80,13 +81,41 @@
                                                     $elem=$lgcommande->item(0)->firstChild;
                                                     while($j<=4){
                                                         echo "<td>".$elem->nodeValue."</td>";
+                                                        if($j==1){
+                                                            $_SESSION['date_commande']=$elem->nodeValue;
+                                                        }
+                                                        if($j==2){
+                                                            $_SESSION['designation']=$elem->nodeValue;
+                                                        }
+                                                        if($j==3){
+                                                            $_SESSION['quantite_commande']=$elem->nodeValue;
+                                                        }
+                                                        if($j==4){
+                                                            $_SESSION['paye']=$elem->nodeValue;
+                                                        }
                                                         $elem=$elem->nextSibling;
                                                         $j++;
                                                     }
                                                     echo "</tr>";
+                                                    $_SESSION['no_client']=$grandparent->getAttribute('no_client');
+                                                    $_SESSION['no_ligne_commande']=$i;
                                             ?>
                                                 </tbody>
                                             </table>
+                                            <div class="row">
+                                                    <form method="POST" action="../REQUETTES/operation_commande.php">
+                                                        <div class="row">
+                                                            <div class="col-md-offset-4 col-md-4">
+                                                                <input type="submit" name="modifier" value="modifier" class="btn btn-success form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-offset-4 col-md-4">
+                                                                <input type="submit" name="supprimer" value="supprimer" class="btn btn-warning form-control">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
                                             <?php
                                         }
                                         
